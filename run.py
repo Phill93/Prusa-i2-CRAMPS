@@ -14,7 +14,7 @@ try:
     launcher.check_installation()
     launcher.cleanup_session()
     launcher.load_bbio_file('cramps2_cape.bbio')
-    launcher.start_process("configserver -n MendelMax ~/Machineface")
+    launcher.start_process("configserver -n Prusa_i2 ~/Machineface")
     launcher.start_process('linuxcnc CRAMPS.ini')
     while True:
         launcher.check_processes()
